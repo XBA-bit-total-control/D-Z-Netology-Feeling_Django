@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Директории</title>
+</head>
+<body>
+    <h2>Список:</h2>
+    {% for i in list_dir %}
+        <p>>>> {{i}}</p>
+    {% endfor %}
+    <a href="{% url 'home' %}">На главную</a>
+</body>
+</html>
